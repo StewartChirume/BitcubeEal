@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Logged In</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h2>WELCOME TO YOUR PORTAL</h2>
+        </div>
+    </header>
+    <main>
+        <table class="content-table">
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault(); onFormSubmit()">
+                        <div>
+                            <label>Full Name</label>
+                            <input type="text" name="fullName" id="fullName" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label>Student Number</label>
+                            <input type="number" name="studentNumber" id="studentNumber" required>
+                        </div>
+                        <br>
+                        <div>
+                            <lable>Student Course/Degree</lable>
+                            <input type="text" name="studentCourse" id="studentCourse" required>
+                        </div>
+                        <br>
+                        <div class="submit-button">
+                            <label></label>
+                            <input type="submit" value="Add Student">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="studentList">
+                        <thead>
+                            <tr>
+                                <th class="head">Full Name</th>
+                                <th class="head">Student Number</th>
+                                <th class="head">Student Degree</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Stewart Chirume</td>
+                                <td>219016171</td>
+                                <td><a href="WebDevelopment.html">Web Development</a></td>
+                            </tr>
+                            <tr>
+                                <td>Melody Mahole</td>
+                                <td>219016198</td>
+                                <td><a href="MechEng.html">Mechanical Engineering</a></td>
+                            </tr>
+                            <tr>
+                                <td>Leslie Doro</td>
+                                <td>220151921</td>
+                                <td><a href="ElectEng.html">Electrical Engineering</a></td>
+                            </tr>
+                            <tr>
+                                <td>Joseph Orba</td>
+                                <td>216012198</td>
+                                <td><a href="CompSci.html">Computer Systems</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </main>
+    <script src="JavaScript.js"></script>
+    <footer>
+        <div class="footer">
+            <h6>DONE BY STEWART CHIRUME</h>
+        </div>
+    </footer>
+</body>
+
+</html>
